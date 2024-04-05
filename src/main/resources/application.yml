@@ -1,1 +1,13 @@
-spring.application.name=diningreview
+
+spring:
+  application:
+    name: "Dining Review API"
+  datasource:
+    url: jdbc:h2:file:~/diningreview.db;NON_KEYWORDS=user
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 4001
